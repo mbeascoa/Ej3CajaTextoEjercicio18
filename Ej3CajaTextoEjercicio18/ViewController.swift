@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var labelcaja: UITextField!
+
+    @IBOutlet weak var apellidos: UITextField!
     @IBOutlet weak var mensajesalida: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +20,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func mostrarMensaje(_ sender: Any) {
-        mensajesalida.text="Hola \(labelcaja.text!)"
+        mensajesalida.text="Hola \(labelcaja.text!) \(apellidos.text!)"
     }
     
 }
